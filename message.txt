@@ -1,0 +1,111 @@
+{
+    "job_id": "030d3158-db56-4f3e-ad11-57ba6b0bbe93",
+    "status": "FAILED",
+    "project": "VPN_Mobile",
+    "details": {
+        "build_version": "2.2.5.156",
+        "environment": "staging",
+        "job_type": "build-run",
+        "path_to_build": "C:\\Users\\husma\\OneDrive\\Desktop\\h1erqn2ol7ye1.jpg",
+        "platform": "Android",
+        "runner_id": "chucea-pc",
+        "scheduled_by": "Bamboo automation",
+        "script_source": "https://github.com/husmancristian/TA_GEAMAN",
+        "suite_name": "smoke_vpn"
+    },
+    "messages": [
+        "Test suite initiated.",
+        "Login test completed successfully.",
+        "Product purchase encountered an error at payment step.",
+        "Admin panel test skipped due to missing configuration.",
+        "Reporting module test marked for re-run.",
+        "Critical vulnerability found in API authentication.",
+        "Test suite finished."
+    ],
+    "started_at": "2023-11-15T10:00:00Z",
+    "ended_at": "2023-11-15T10:15:30Z",
+    "duration_seconds": 930,
+    "passrate": "28.57%",
+    "progress": "5/7",
+    "metadata": {
+        "test_cases": [
+            {
+                "id": "TC001",
+                "name": "User Login with Valid Credentials",
+                "status": "PASSED",
+                "duration_ms": 12500,
+                "steps": [
+                    {
+                        "action": "Navigate to login page",
+                        "status": "PASSED"
+                    },
+                    {
+                        "action": "Enter username 'testuser'",
+                        "status": "PASSED"
+                    },
+                    {
+                        "action": "Enter password '********'",
+                        "status": "PASSED"
+                    },
+                    {
+                        "action": "Click login button",
+                        "status": "PASSED"
+                    },
+                    {
+                        "action": "Verify dashboard is displayed",
+                        "status": "PASSED"
+                    }
+                ]
+            },
+            {
+                "id": "TC002",
+                "name": "User Login with Google",
+                "status": "PASSED",
+                "duration_ms": 12500
+            },
+            {
+                "id": "TC003",
+                "name": "Product Purchase Flow",
+                "status": "FAILED",
+                "duration_ms": 45800,
+                "logs": "Timeout waiting for payment confirmation element. \n Payment Confirmation"
+            },
+            {
+                "id": "TC004",
+                "name": "Reporting Module - Data Generation Accuracy",
+                "status": "RETEST",
+                "duration_ms": 120000,
+                "logs": "Initial execution used a partial dataset due to upstream data sync delay. Re-queued with full dataset."
+            },
+            {
+                "id": "TC005",
+                "name": "DNS LEAk TEST",
+                "status": "FAILED_CRITICAL",
+                "duration_ms": 65000,
+                "logs": "DNS LEAK DETECTED"
+            },
+            {
+                "id": "TC006",
+                "name": "Admin Panel Access Control",
+                "status": "SKIPPED"
+            },
+            {
+                "id": "TC007",
+                "name": "Admin Panel Access Control",
+                "status": "SKIPPED"
+            }
+        ],
+        "environment_snapshot": {
+            "device_type": "SM-875B",
+            "os": "Android 16"
+        },
+        "suite_execution_summary": {
+            "total_tests": 7,
+            "passed": 2,
+            "failed": 1,
+            "skipped": 2,
+            "retest": 1,
+            "failed_critical": 1
+        }
+    }
+}

@@ -1,0 +1,24 @@
+name: ta_dash
+description: "A new Flutter project."
+publish_to: 'none'
+version: 0.1.0
+
+environment:
+  sdk: ^3.8.0-171.0.dev
+
+dependencies:
+  flutter:
+    sdk: flutter
+  http: ^1.3.0
+  intl: ^0.20.2
+  url_launcher: ^6.3.1
+  video_player: ^2.8.1 
+
+
+dev_dependencies:
+  flutter_test:
+    sdk: flutter
+  flutter_lints: ^5.0.0
+
+flutter:
+  uses-material-design: true
